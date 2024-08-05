@@ -1,0 +1,519 @@
+---
+format:
+  revealjs: 
+    theme: [default, styles.scss]
+    width: 1280
+    height: 720
+    include-after-body: 
+      - "all-the-js-code.html"
+pagetitle: Creating Stunning Presentations with Quarto
+echo: false
+menu: false
+code-line-numbers: false
+revealjs-plugins:
+  - codewindow
+editor:
+  render-on-save: true
+---
+
+## {.center style="text-align: center;"}
+
+:::: r-fit-text
+Creating Stunning 
+
+Presentations 
+
+with Quarto
+:::
+
+## Quarto Revealjs Basics
+
+:::: columns
+:::: {.column width="50%"}
+:::: {.codewindow .quarto}
+index.qmd
+`````md
+{{< include includes/basics.qmd >}}
+`````
+:::
+:::
+
+:::: {.column width="50%"}
+<br>
+<iframe class="slide-deck" src="iframe-slides/basics.html"></iframe>
+:::
+:::
+
+:::: {.fragment .advance-slide .basics1}
+:::
+:::: {.fragment .advance-slide .basics2}
+:::
+:::: {.fragment .advance-slide .basics3}
+:::
+
+## Quarto Revealjs tricks
+
+:::: columns
+:::: {.column width="50%"}
+:::: {.codewindow .quarto}
+index.qmd
+`````md
+{{< include includes/tricks.qmd >}}
+`````
+:::
+:::
+
+:::: {.column width="50%"}
+<br>
+<iframe class="slide-deck" src="iframe-slides/tricks.html"></iframe>
+:::
+:::
+
+:::: {.fragment .advance-slide .tricks1}
+:::
+:::: {.fragment .advance-slide .tricks2}
+:::
+:::: {.fragment .advance-slide .tricks3}
+:::
+:::: {.fragment .advance-slide .tricks4}
+:::
+
+## Colors and fonts
+
+:::: fragment
+![](images/pinterest.png){width="100%" fig-align="center"}
+:::
+
+## Color Contrast Checker
+
+![](images/contrast.png){width="100%" fig-align="center"}
+
+:::: footer
+<https://colourcontrast.cc/>
+:::
+
+## Google fonts
+
+![](images/google-fonts.png){width="100%" fig-align="center"}
+
+## Setting the theme - sass variables
+
+![](images/sass-variables.png){width="100%" fig-align="center"}
+
+:::: footer
+<https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables>
+:::
+
+##
+
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+
+:::: columns
+:::: {.column width="50%"}
+:::: {.codewindow .quarto}
+index.qmd
+`````md
+---
+format: 
+  revealjs:
+    theme: style.scss
+---
+`````
+:::
+:::: {.codewindow .sass}
+style.scss
+
+{{< include includes/sass.qmd >}}
+:::
+:::
+
+:::: {.column width="50%"}
+
+<iframe class="slide-deck" src="iframe-slides/sass.html"></iframe>
+
+:::
+:::
+
+## setting the palette
+
+:::: columns
+:::: {.column width="50%"}
+:::: {.codewindow .sass}
+styles.scss
+
+{{< include includes/palette.qmd >}}
+:::
+:::
+
+:::: {.column width="50%"}
+:::: {.fragment}
+<iframe class="slide-deck" src="iframe-slides/palette.html"></iframe>
+:::
+:::
+:::
+
+##
+
+:::: columns
+:::: {.column width="50%"}
+
+<br> <br> <br>
+
+[Doing a lot with a little]{style="font-size:1.5em"}
+
+<br> <br>
+
+you want to work with
+:::
+
+:::: {.column width="50%"}
+
+<br> 
+
+:::: {style="font-size:3em;"}
+
+colors
+
+sizes
+
+fonts
+
+:::
+
+:::
+:::
+
+## Styling code highlighting
+
+<iframe class="slide-deck" style="height:800px; max-width: 100%;" src="iframe-slides/code-highlighting.html"></iframe>
+
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+
+:::: footer
+<https://emilhvitfeldt.com/post/slidecraft-code-output/#change-highlighting-theme>
+:::
+
+## {background-image="images/markus-spiske.jpg"}
+
+:::: {.absolute left="55%" top="35%" style="color:#6A2434; font-size:2.5em;"}
+Positioning
+
+matters!
+:::
+
+:::: footer
+Photo by <a href="https://unsplash.com/@markusspiske?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Spiske</a> on <a href="https://unsplash.com/photos/closeup-photo-of-red-ball-ornament-on-surface-AF_4tBQjdtc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+:::
+
+## {background-image="images/markus-spiske.jpg"}
+
+:::: columns
+:::: {.column width="50%"}
+
+:::
+
+:::: {.column width="50%"}
+<br><br><br>
+
+`````markdown
+## {background-image="images/markus-spiske.jpg"}
+
+:::: {.absolute left="55%" top="35%" style="color:#6A2434; font-size:2.5em;"}
+Positioning
+
+matters!
+:::
+`````
+:::
+:::
+
+:::: footer
+Photo by <a href="https://unsplash.com/@markusspiske?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Spiske</a> on <a href="https://unsplash.com/photos/closeup-photo-of-red-ball-ornament-on-surface-AF_4tBQjdtc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+:::
+
+## {background-image="images/markus-spiske.jpg"}
+
+:::: {.absolute left="45%" top="25%" style="color:#6A2434; font-size:2.5em; padding: 0.5em 1em; background-color: rgba(255, 255, 255, .15); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); border-radius: 5px;"}
+Positioning
+
+matters!
+:::
+
+:::: footer
+Photo by <a href="https://unsplash.com/@markusspiske?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Spiske</a> on <a href="https://unsplash.com/photos/closeup-photo-of-red-ball-ornament-on-surface-AF_4tBQjdtc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+:::
+
+## {background-image="images/markus-spiske.jpg"}
+
+:::: columns
+:::: {.column width="50%"}
+
+:::
+
+:::: {.column width="50%"}
+<br> <br>
+
+```css
+.frosted {
+  color:#6A2434; 
+  font-size:2.5em; 
+  padding: 0.5em 1em; 
+  background-color: rgba(255, 255, 255, .15); 
+  backdrop-filter: blur(5px); 
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+}
+```
+:::
+:::
+
+:::: footer
+Photo by <a href="https://unsplash.com/@markusspiske?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Spiske</a> on <a href="https://unsplash.com/photos/closeup-photo-of-red-ball-ornament-on-surface-AF_4tBQjdtc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+:::
+
+## Creating slide classes
+
+:::: {.codewindow .sass}
+style.scss
+
+{{< include includes/slide-classes.qmd >}}
+:::
+
+## Creating slide classes 
+
+:::: {.codewindow .quarto}
+index.qmd
+`````md
+---
+format: 
+  revealjs:
+    theme: style.scss
+---
+
+## Amazing Title {.theme-title1 .center}
+
+## Welcome! {.theme-slide1}
+
+## Getting started {.theme-section2 .center}
+
+## Install R {.theme-slide3}
+
+## Try to install Python {.theme-slide3}
+`````
+:::
+
+## 
+
+<iframe class="slide-deck" style="height:800px; max-width: 100%;" src="iframe-slides/earth/index.html"></iframe>
+
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+
+:::: footer
+<https://github.com/EmilHvitfeldt/quarto-revealjs-earth>
+:::
+
+## 
+
+<iframe class="slide-deck" style="height:800px; max-width: 100%; resize:both;" src="iframe-slides/letterbox/index.html"></iframe>
+
+:::: footer
+<https://github.com/EmilHvitfeldt/quarto-revealjs-letterbox>
+:::
+
+## Fragments 
+
+:::: columns
+:::: {.column width="50%"}
+:::: {.codewindow .quarto}
+index.qmd
+```md
+---
+format: revealjs
+---
+
+:::: {.fragment}
+Fade in
+:::
+
+:::: {.fragment .fade-out}
+Fade out
+:::
+
+:::: {.fragment .highlight-red}
+Highlight red
+:::
+```
+:::
+:::
+
+:::: {.column width="50%"}
+<iframe class="slide-deck" src="iframe-slides/fragment.html"></iframe>
+:::
+:::
+
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+
+:::: footer
+<https://quarto.org/docs/presentations/revealjs/advanced.html#fragments>
+:::
+
+## Custom fragments 
+
+:::: {.codewindow .sass}
+styles.scss
+
+<div>
+.reveal .slides section .fragment.[highlight-orange]{.blue} {  
+\ \ [opacity: 1;]{.teal}  
+\ \ [visibility: inherit]{.teal}  
+}
+
+.reveal .slides section .fragment.[highlight-orange]{.blue}.visible {  
+\ \ [background-color: $theme-orange;]{.teal}  
+}
+</div>
+:::
+
+:::: {.fragment}
+<iframe class="slide-deck" style="height:300px; max-width: 100%;" src="iframe-slides/fragment_custom.html"></iframe>
+:::
+
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+
+## Revealjs API 
+
+```js
+// Relative navigation
+Reveal.left();
+Reveal.right();
+Reveal.up();
+Reveal.down();
+Reveal.prev();
+Reveal.next();
+
+// Returns an object with the scaled 
+// presentationWidth & presentationHeight
+Reveal.getComputedSlideSize();
+
+Reveal.getCurrentSlide();
+
+Reveal.getProgress();
+```
+
+:::: footer
+<https://revealjs.com/api/>
+:::
+
+## Revealjs Events 
+
+```js
+Reveal.on( 'slidechanged', event => {
+  // event.previousSlide, event.currentSlide
+} );
+
+Reveal.on( 'resize', event => {
+  // event.scale, event.oldScale, event.size
+} );
+```
+
+<br>
+
+```js
+Reveal.on( 'fragmentshown', event => {
+  // event.fragment = the fragment DOM element
+} );
+Reveal.on( 'fragmenthidden', event => {
+  // event.fragment = the fragment DOM element
+} );
+```
+
+:::: footer
+<https://revealjs.com/api/>
+:::
+
+## fragments with javascript 
+
+```js
+Reveal.on( 'fragmentshown', event => {  
+  if (event.fragment.classList.contains("advance-slide")) {  
+    Reveal  
+      .getCurrentSlide().querySelector("iframe")  
+      .contentWindow.Reveal.right()  
+  }  
+} );  
+
+Reveal.on( 'fragmenthidden', event => {  
+  if (event.fragment.classList.contains("advance-slide")) {  
+    Reveal  
+      .getCurrentSlide().querySelector("iframe")  
+      .contentWindow.Reveal.left()  
+  }  
+} );  
+```
+
+## fragments with javascript 
+
+:::: {.codewindow .quarto}
+index.qmd
+```md
+---
+format:
+  revealjs: 
+    include-after-body: 
+      - "custom-fragments.html"
+---
+
+<iframe class="slide-deck" src="basics.html"></iframe>
+
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+:::: {.fragment .advance-slide}
+:::
+```
+:::
+
+## {.center background-image="images/sixteen-miles.png"}
+
+:::: columns
+:::: {.column widtd="55%"}
+:::
+:::: {.column width="45%" style="text-align:right;"}
+[Thank you]{.r-fit-text}
+
+<br>
+
+[Slidecraft 101 blog series at emilhvitfeldt.com](https://www.emilhvitfeldt.com/blog.html#category=slidecraft%20101)
+
+:::
+:::

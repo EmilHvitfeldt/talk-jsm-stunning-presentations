@@ -1,0 +1,65 @@
+---
+format:
+  revealjs: 
+    theme: [default, code-highlighting.scss]
+---
+
+## {.center}
+
+```r
+library(dplyr)
+
+starwars <- starwars %>% 
+  mutate(name, bmi = mass / ((height / 100)  ^ 2)) %>%
+  select(name:mass, bmi)
+
+library(ggplot2)
+
+ggplot(starwars, aes(height, mass, color = bmi)) +
+  geom_point() +
+  labs(
+    x = "Height (cm)",
+    y = "Mass (kg)",
+    color = "BMI"
+  )
+```
+
+## {.center .step1}
+
+```r
+library(dplyr)
+
+starwars <- starwars %>% 
+  mutate(name, bmi = mass / ((height / 100)  ^ 2)) %>%
+  select(name:mass, bmi)
+
+library(ggplot2)
+
+ggplot(starwars, aes(height, mass, color = bmi)) +
+  geom_point() +
+  labs(
+    x = "Height (cm)",
+    y = "Mass (kg)",
+    color = "BMI"
+  )
+```
+
+## {.center .step2}
+
+```r
+library(dplyr)
+
+starwars <- starwars %>% 
+  mutate(name, bmi = mass / ((height / 100)  ^ 2)) %>%
+  select(name:mass, bmi)
+
+library(ggplot2)
+
+ggplot(starwars, aes(height, mass, color = bmi)) +
+  geom_point() +
+  labs(
+    x = "Height (cm)",
+    y = "Mass (kg)",
+    color = "BMI"
+  )
+```

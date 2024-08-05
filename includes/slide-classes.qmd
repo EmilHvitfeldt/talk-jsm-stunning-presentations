@@ -1,0 +1,22 @@
+<div>
+$theme-blue: #394D85;
+
+@mixin background-full {  
+\ \ background-size: cover;  
+\ \ background-position: center;  
+\ \ background-repeat: no-repeat;  
+}
+
+.theme-slide2 {  
+\ \ &:is(.slide-background) {  
+\ \ \ \ background-image: url('../../../../../assets/slide2.svg');  
+\ \ \ \ @include background-full;  
+\ \ }  
+\ \ h3 {  
+\ \ \ \ color: $theme-blue;  
+\ \ }  
+\ \ h2, h3, h4, h5, p, pre {  
+\ \ \ \ margin-left: 100px;  
+\ \ }  
+}
+</div>

@@ -1,0 +1,45 @@
+$colors: (
+  "white": #FFFFFF,
+  "black": #222222
+);
+
+/*-- scss:functions --*/
+
+@function theme-color($color) {
+  @return map-get($colors, $color);
+}
+
+/*-- scss:defaults --*/
+
+$body-bg: theme-color("white");
+$body-color: theme-color("black");
+
+/*-- scss:rules --*/
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+// Slide decks
+
+.slide-deck {
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+  margin-bottom: 10px !important;
+  box-shadow: 0 5px 5px theme-color("black");
+}
+
+// codewindow
+.sourceCode.markdown {
+  span {
+    text-wrap: balance;
+    word-wrap: break-word;
+  }
+}

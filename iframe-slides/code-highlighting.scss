@@ -1,0 +1,61 @@
+/*-- scss:defaults --*/
+
+$theme-orange: #FFB81A;
+$theme-yellow: #FFD571;
+$theme-brown: #E2AE86;
+$theme-pink: #FED7E1;
+
+$body-bg: lighten($theme-orange, 30%);
+
+/*-- scss:rules --*/
+
+.reveal {
+  .step1 {
+    div.sourceCode pre code {
+      background-color: #4a4a4a;
+    }
+
+    pre>code.sourceCode>span {
+      color: white;
+    }
+
+    code span.sc,
+    code span.ot {
+      color: white;
+    }
+  }
+
+  .step2 {
+    div.sourceCode pre code {
+      background-color: #4a4a4a;
+    }
+
+    pre>code.sourceCode>span {
+      color: white;
+    }
+
+    code span {
+
+      &.sc,
+      &.ot {
+        color: white;
+      }
+
+      &.fu {
+        color: $theme-orange;
+      }
+
+      &.at {
+        color: $theme-yellow;
+      }
+
+      &.dv {
+        color: $theme-pink;
+      }
+
+      &.st {
+        color: $theme-brown;
+      }
+    }
+  }
+}

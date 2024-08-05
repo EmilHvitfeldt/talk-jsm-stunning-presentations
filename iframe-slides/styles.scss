@@ -1,0 +1,78 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code_Pro&display=swap');
+
+$font-family-sans-serif: "Crimson Text";
+$font-family-monospace: 'Source Code Pro', monospace;
+
+$theme-purple: #BF65C5;
+$theme-blue: #76AADB;
+$theme-teal: #50847B;
+$theme-cream: #F5F5F5;
+$theme-dark-purple: #1A1626;
+
+$theme-yellow: #FFD571;
+$theme-brown: #a37100;
+$theme-pink: #FED7E1;
+
+$body-bg: white;
+$body-color: black;
+$link-color: darken($theme-cream, 20%);
+$selection-bg: $theme-blue;
+
+/*-- scss:rules --*/
+
+@font-face {
+  font-family: 'Adlery';
+  src: url('../../../../../Adlery.woff2') format('woff2'),
+    url('../../../../../Adlery.woff') format('woff');
+}
+
+.adlery {
+  font-family: 'Adlery';
+}
+
+.titlebox {
+  padding: 0.2em 0.4em;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, .2);
+  border-radius: 5px;
+}
+
+.reveal .footer {
+  color: white;
+}
+
+.codewindow {
+  color: black;
+}
+
+.codewindow .textarea .sourceCode {
+  background-color: white !important;
+}
+
+code span.fu {
+  color: #a37100;
+}
+
+.reveal code {
+  color: #a37100;
+}
+
+.mono {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.blue {
+  color: $theme-blue;
+}
+
+.teal {
+  color: $theme-teal;
+}
+
+.brown {
+  color: $theme-brown;
+}

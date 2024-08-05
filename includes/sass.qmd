@@ -1,0 +1,17 @@
+<div>
+/\*\-\- scss:defaults \-\-\*/  
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Sail&display=swap');
+
+[$font-family-sans-serif]{.brown}: "Crimson Text";  
+
+[$presentation-font-size-root]{.brown}: 46px;
+
+[$link-color]{.brown}: #440033;
+
+::: {.fragment .advance-slide}
+[$bg-color]{.brown}: #B7D9F6;
+:::
+
+/\*\-\- scss:rules \-\-\*/  
+</div> 
