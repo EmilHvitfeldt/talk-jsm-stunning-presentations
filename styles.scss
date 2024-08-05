@@ -1,6 +1,9 @@
 $colors: (
   "white": #FFFFFF,
-  "black": #222222
+  "black": #222222,
+  "green": #A2B479,
+  "blue": #3A388A,
+  "purple": #7371AD
 );
 
 /*-- scss:functions --*/
@@ -11,8 +14,13 @@ $colors: (
 
 /*-- scss:defaults --*/
 
-$body-bg: theme-color("white");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Sanchez:ital@0;1&display=swap');
+
+$font-family-sans-serif: "Dosis", sans-serif;
+
+$body-bg: lighten(theme-color("blue"), 55%);
 $body-color: theme-color("black");
+$link-color: darken(theme-color("green"), 20%);
 
 /*-- scss:rules --*/
 
@@ -25,6 +33,20 @@ $body-color: theme-color("black");
     background-color: $color;
   }
 }
+
+.reveal {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Sanchez", serif;
+    color: theme-color("purple");
+  }
+}
+
 
 // Slide decks
 
