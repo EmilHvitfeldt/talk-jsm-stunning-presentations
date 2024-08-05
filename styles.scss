@@ -15,6 +15,7 @@ $colors: (
 /*-- scss:defaults --*/
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Sanchez:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 $font-family-sans-serif: "Dosis", sans-serif;
 
@@ -32,6 +33,10 @@ $link-color: darken(theme-color("green"), 20%);
   .bg-#{$name} {
     background-color: $color;
   }
+}
+
+.title-text {
+  font-family: "Abril Fatface", serif;
 }
 
 .reveal {
